@@ -1,1 +1,1 @@
-<h1>Jascript</h1>
+<h1>Javascript</h1>
