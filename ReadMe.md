@@ -5,9 +5,10 @@
    -> head or body or 외부 코드
    -> 하지만 무조건 body 맨밑에
 
-2. javascript 문법
+1-1. javascript 문법
+
 <ul>
-<li><h4>변수 및 데이터 타입</h4></li>
+<li>변수 및 데이터 타입</li>
 <li>Console.log -> console창에 출력 </li>
 <li>변수 : 데이터를 저장하는 공간<br>변수의 종류 : var </li>
 <li>var 변수의 단점을 극복한 let,const</li>
@@ -24,5 +25,17 @@
 <li>후위 연산자 x++ , 전위 연산자 ++x</li>
 <li>논리 연산자 AND-&& OR-||</li>
 <li>삼항 연산자 (x>y)? x:y 참이면 x 거짓이면 y</li>
+</ul>
+
+<h1>2. Lesson 2021-06-24</h1>
+2. javascript 문법
+
+<ul>
+<li>조건문 if~else구문</li>
+<li>switch문 switch(key){ case 1: break;}</li>
+<li>반복문 for-loop, for-in , for-of</li>
+<li>while,do~while</li>
+<li>함수명 function 함수명(){}</li>
+<li>문자열 객체</li>
 
 </ul>
