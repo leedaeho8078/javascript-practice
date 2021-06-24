@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    //문제1. userlsit 의 데이터에서 gender가 male이인 사람만 // 새배열에
+    maleuserList에 담고 console.log에 출력
+    <script>
+      var maleUserList = [];
+      var length = userList.length;
+      // for (var i = 0; i < length; i++) {
+      //   if (userList[i].gender === "male") {
+      //     maleUserList.push(userList[i]);
+      //   }
+      // }
+      // console.log(maleUserList);
+
+      for (var index in userList) {
+        if (userList[index]["gender"] === "male") {
+          maleUserList.push(userList[index]);
+        }
+      }
+      console.log(maleUserList);
+
+      for (var user of userList) {
+        if (user.gender === " male") {
+          maleUserList.push(user);
+        }
+      }
+
+      console.table(maleUserList);
+    </script>
+  </body>
+</html>

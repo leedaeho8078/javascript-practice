@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 문제 2 음료자판기 문제를 함수로, 사용자가 넣은 돈은 파라미터로 만들고
+      // 구매할수 잇는 음료 리스트 반환하기
+      // function showProductList(inputCoin){}
+
+      var showProductList = function (inputCoin) {
+        // var inputCoin = 800;
+        var inputCoinArray = [];
+        for (var product of productList) {
+          if (product.price <= inputCoin) {
+            inputCoinArray.push(product);
+          }
+        }
+        return inputCoinArray;
+      };
+      var productList = [
+        {
+          name: "솔의눈",
+          price: 700,
+        },
+        {
+          name: "커피",
+          price: 700,
+        },
+        {
+          name: "파워에이드",
+          price: 1200,
+        },
+        {
+          name: "오렌지",
+          price: 1000,
+        },
+        {
+          name: "보리차",
+          price: 1200,
+        },
+        {
+          name: "밀키스",
+          price: 800,
+        },
+      ];
+
+      console.log(showProductList(800));
+    </script>
+  </body>
+</html>

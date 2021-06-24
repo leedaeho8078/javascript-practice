@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function calculator(num1, num2, operator) {
+        var result = 0;
+        switch (operator) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            if (num1 > num2) {
+              result = num1 - num2;
+              break;
+            } else {
+              result = num2 - num1;
+              break;
+            }
+
+          case "*":
+            result = num1 * num2;
+            break;
+
+          case "/":
+            if (num2 !== 0) {
+              result = num1 / num2;
+              break;
+            }
+          default:
+            break;
+        }
+        return result;
+      }
+
+      function calculator2(n1, n2, operator) {
+        return eval(n1 + operator + n2);
+      }
+
+      console.log(calculator(5, 3, "*"));
+      console.log(calculator2(5, 3, "*"));
+    </script>
+  </body>
+</html>
