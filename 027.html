@@ -8,116 +8,118 @@
   </head>
   <body>
     <script>
-        var txt = "avsdfasdf23rsadfasdfasdfsaf";
-        console.log(txt.length);
+      var txt = "avsdfasdf23rsadfasdfasdfsaf";
+      console.log(txt.length);
 
-        var txt = "Please locate where locate occur";
-        console.log(txt.lastIndexOf("locate"));
-        console.log(txt.indexOf("locate"));
-        var tel = "010-7702-8978";
+      var txt = "Please locate where locate occur";
+      console.log(txt.lastIndexOf("locate"));
+      console.log(txt.indexOf("locate"));
+      var tel = "010-7702-8978";
 
-        if (tel.indexOf("-") > -1) {
-          console.log("정신 차리세요");
+      if (tel.indexOf("-") > -1) {
+        console.log("정신 차리세요");
+      }
+
+      // slice - 두개의 파라미터, 첫번쨰 -시작인덱스 번호, 두번쨰 -종료인덱스번호
+      var text = "Apple, Banana, KIWI";
+
+      console.log(text.slice(7, 13));
+      console.log(text.slice(7));
+      console.log(text.slice(-12));
+
+      var txt = "9904121";
+      if (txt.slice(-1) == 1) {
+        console.log("남자");
+      }
+
+      //subString == slice 음수값x
+      console.log(text.substring(7, 13));
+      console.log(text.substring(7));
+
+      // subStr() 두번째 파라미터가 잘라낼 길이
+      var date = "20210624";
+      var year = date.slice(0, 4);
+      var year2 = date.substring(0, 4);
+      var year3 = date.substr(0, 4);
+
+      var month = date.slice(4, 6);
+      var month2 = date.substring(4, 6);
+      var month3 = date.substr(4, 2); //06
+      console.log(month3);
+      var date = "2021.10.24";
+
+      console.log(text.substr(7, 5));
+
+      var date = "202134.1320.32342345";
+      date.substring(0, date.indexOf("."));
+      date.substring(date.indexOf(".") + 1, date.lastIndexOf("."));
+
+      //replace
+      console.log(date.replace(".", "-"));
+
+      //toUpperCase()
+      var txt = "hello world";
+      console.log(txt.toUpperCase());
+
+      //concat()
+      var text1 = "Hello";
+      var text2 = "world";
+
+      console.log(text1.concat(" ", text2, " "));
+
+      //trim()
+      var text = "   Hello World     ";
+      console.log(text);
+      console.log(text.trim());
+
+      //padStart() 첫번쨰- 문자열의 총길이, 두번째 - 뭘로 채울래??
+      var txt = "5";
+      console.log(txt.padStart(5, 1));
+
+      // 첫번쨰 문자열, 총길이, 세번째로 뭘로 채울지
+      //함수 fillchar
+
+      function fillchar(str, len, s) {
+        while (str.length < len) {
+          str = s + str;
         }
+        return str;
+      }
 
-        // slice - 두개의 파라미터, 첫번쨰 -시작인덱스 번호, 두번쨰 -종료인덱스번호
-        var text = "Apple, Banana, KIWI";
+      console.log(fillchar("5", 5, 0));
 
-        console.log(text.slice(7, 13));
-        console.log(text.slice(7));
-        console.log(text.slice(-12));
+      //padEnd()
+      var txt = "5";
+      console.log(txt.padEnd(5, 1));
 
-        var txt = "9904121";
-        if (txt.slice(-1) == 1) {
-          console.log("남자");
-        }
+      //charAt()  -> 인덱스를 가지고 있어서 0-> 문자열 첫번째
+      var txt = "Hello World";
+      console.log(txt.charAt(1));
 
-        //subString == slice 음수값x
-        console.log(text.substring(7, 13));
-        console.log(text.substring(7));
+      //charCodeAt()
+      var txt = "Hello World";
+      console.log(txt.charCodeAt(0));
 
-        // subStr() 두번째 파라미터가 잘라낼 길이
-        var date = "20210624";
-        var year = date.slice(0, 4);
-        var year2 = date.substring(0, 4);
-        var year3 = date.substr(0, 4);
+      // 가장 유용 split() 2021-06-25 split("-") -> "-" 기준으로 분리
+      // 배열로 리턴
+      var txt = "2021-06-25";
+      console.table(txt.split("-"));
 
-        var month = date.slice(4, 6);
-        var month2 = date.substring(4, 6);
-        var month3 = date.substr(4, 2); //06
-        console.log(month3);
-        var date = "2021.10.24";
+      //#서울#양평#한경닷컴#개발자의품격
+      var text = "#서울#양평#한경닷컴#개발자의 품격";
+      var result = text.split("#");
+      console.log(result);
 
-        console.log(text.substr(7, 5));
+      //startWith() --> 괄호안에 시작하는지
+      var url = "http://www.naver.com";
 
-        var date = "202134.1320.32342345";
-        date.substring(0, date.indexOf("."));
-        date.substring(date.indexOf(".") + 1, date.lastIndexOf("."));
+      if (url.startsWith("http://") || url.startsWith("https://")) {
+      }
 
-        //replace
-        console.log(date.replace(".", "-"));
-
-        //toUpperCase()
-        var txt = "hello world";
-        console.log(txt.toUpperCase());
-
-        //concat()
-        var text1 = "Hello";
-        var text2 = "world";
-
-        console.log(text1.concat(" ", text2, " "));
-
-        //trim()
-        var text = "   Hello World     ";
-        console.log(text);
-        console.log(text.trim());
-
-        //padStart() 첫번쨰- 문자열의 총길이, 두번째 - 뭘로 채울래??
-        var txt = "5";
-        console.log(txt.padStart(5, 1));
-
-        // 첫번쨰 문자열, 총길이, 세번째로 뭘로 채울지
-        //함수 fillchar
-
-        function fillchar(str, len, s) {
-          while (str.length < len) {
-            str = s + str;
-          }
-          return str;
-        }
-
-        console.log(fillchar("5", 5, 0));
-
-        //padEnd()
-        var txt = "5";
-        console.log(txt.padEnd(5, 1));
-
-        //charAt()  -> 인덱스를 가지고 있어서 0-> 문자열 첫번째
-        var txt = "Hello World";
-        console.log(txt.charAt(1));
-
-        //charCodeAt()
-        var txt = "Hello World";
-        console.log(txt.charCodeAt(0));
-
-        // 가장 유용 split() 2021-06-25 split("-") -> "-" 기준으로 분리
-        // 배열로 리턴
-        var txt = "2021-06-25";
-        console.table(txt.split("-"));
-
-        //#서울#양평#한경닷컴#개발자의품격
-        var text = "#서울#양평#한경닷컴#개발자의 품격";
-        var result = text.split("#");
-        console.log(result);
-
-        //startWith()
-        var url = "http://www.naver.com";
-
-        if (url.startsWith("http://") || url.startsWith("https://")){}
-
-      //endwith()
-       var imageFile = "logo.jpg";
-       if(imageFile.endsWith(".jpg") || imageFile.endsWith(".jpeg"))
+      //endwith()  --> 괄호안에 끝부터 시작하는지
+      var imageFile = "logo.jpg";
+      if (imageFile.endsWith(".jpg") || imageFile.endsWith(".jpeg")) {
+      }
     </script>
   </body>
 </html>
