@@ -28,7 +28,7 @@
 </ul>
 
 <h1>2. Lesson 2021-06-24</h1>
-2. javascript 문법
+2. javascript 문법 - String객체 함수
 
 <ul>
 <li>조건문 if~else구문</li>
@@ -37,5 +37,15 @@
 <li>while,do~while</li>
 <li>함수명 function 함수명(){}</li>
 <li>문자열 객체</li>
+
+</ul>
+
+<h1>3. Lesson 2021-06-25</h1>
+3. javascript 문법 - Array객체 함수
+<ul>
+
+<li>Number 객체 <src="027.html"/></li>
+<li>array 객체 <src="027.html"/></li>
+<li>Date 객체 <src="027.html"/></li>
 
 </ul>
