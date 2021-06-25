@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = 123;
+      console.log(x.toString()); //toString() -> 정수를 문자로
+      console.log(x + "");
+
+      //toExponential()
+
+      //toFixed() ->소수점 몇자리까지 보여줄것인지
+      var x = 9.656;
+      console.log(x.toFixed(4));
+
+      //toPercision()
+      var y = 9.656;
+      console.log(y.toPrecision(2));
+
+      //parseInt() 문자를 -> 숫자 : 전역함수, 처음 발견된 숫자만 가져온다/
+      var x = "18";
+      console.log(parseInt(x));
+      console.log(parseInt("10.124"));
+      console.log(parseInt("10 20 30"));
+      console.log(parseInt("10 years"));
+      console.log(parseInt("years 10")); //Not a Numver
+
+      //parseFloat() 문자를 ->실수
+      console.log(parseFloat("10.1234"));
+
+      console.log(Number.MIN_SAFE_INTEGER);
+      console.log(Number.POSITIVE_INFINITY);
+      console.log(Number.NEGATIVE_INFINITY);
+
+      console.log(3 / 0);
+    </script>
+  </body>
+</html>
