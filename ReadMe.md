@@ -49,8 +49,4 @@
 <li>Date 객체 <src="027.html"/></li>
 
 </ul>
-var num1 = 10;
-```jsx
-var num1 = 10;
 
-```
