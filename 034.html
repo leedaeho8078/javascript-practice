@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //math 객체
+
+      //round -> 반올림 - 파라미터로 전달받은 숫자형 데이터를 반올림 처리 하
+      console.log(Math.round(4.9));
+      console.log(Math.round(4.4));
+      console.log(Math.round(-4.2));
+
+      //ceil() - 파리머터로 전달받은 숫자형 데이터를 무조건 올림 처리해서 정수를 만듬
+      console.log(Math.ceil(4.4));
+
+      //floor() - 무조건 내림
+      console.log(Math.floor(4.4));
+
+      //trunc() -> 무조건 정수 부분만 반환(소수점 이하는 무조건 버림)
+      console.log(Math.trunc(3.8));
+
+      //sign() --> 양수면 무조건 1 음수면 무조건 -1 0 이면 0
+      console.log(Math.sign(23));
+
+      //pow() --> 제곱근
+      console.log(Math.pow(8, 3));
+
+      //sqrt() - 루트값
+      console.log(Math.sqrt(64));
+
+      //abs() - 절대값
+      console.log(Math.abs(-10));
+
+      //min(), max()
+      console.log(Math.min(0, 2, 3, 4, 33, 1, 2, 34, 5));
+      console.log(Math.max(0, 2, 3, 4, 33, 1, 2, 34, 5));
+
+      //random()
+      console.log(Math.random() * 10 + 1);
+
+      //가위,바위,보 게임 만들기
+      //함수명-rspPlayer
+      // 파라미터 1개 -> "가위", "바위","보"
+      // const arrRsp = ["가위,바위","보"];
+      // return - {UserRsp;"", playerRsp:"", winner :true/false }
+
+      //   function rspPlayer(userRsp) {
+      //     const rsp = ["가위", "바위", "보"];
+      //     const playerRsp = rsp[getRandomInteger(0, 2)];
+
+      //     if (userRsp == playerRsp) {
+      //       return {
+      //         userRsp: userRsp,
+      //         playerRsp: playerRsp,
+      //         winner: 0,
+      //       };
+      //     } else if (userRsp == "가위") {
+      //       if (playerRsp == "보") {
+      //         return {
+      //           userRsp: userRsp,
+      //           playerRsp: playerRsp,
+      //           winner: 1,
+      //         };
+      //       } else {
+      //         return {
+      //           userRsp: userRsp,
+      //           playerRsp: playerRsp,
+      //           winner: -1,
+      //         };
+      //       }
+      //     }
+      //   }
+    </script>
+  </body>
+</html>
