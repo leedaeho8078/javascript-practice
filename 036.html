@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="deleteTime()">삭제</button>
+    <a href="http://www.naver.com" target="_blank">naver</a>
+    <script>
+      // window 객체 - 전역객체 global 객체
+      //   window.alert("이것은 alert 창입니다");
+      // alert("이것은 alert 창입니다").
+
+      //   if (confirm("정말 삭제 하십니까?")) {
+      //     //삭제 로직
+      //   }
+
+      //   var pass = rompt("비밀번호를 입력하세요");
+      //   console.log(pass);
+      //   if (pass == null) {
+      //     //취소버튼 누른경우
+      //   } else if ((pass = -"")) {
+      //   } else if (pass != "") {
+      //     console.log(pass);
+      //   }
+
+      //   function deleteTime() {
+      //     if (confirm("정말 삭제하시겠습니까?")) {
+      //     }
+      //   }
+
+      // open 함수 앞에 window 필수
+      //  window.open("http://www.naver.com");
+
+      //setTimeOut 인자두개 하나는 함수 ,하나는 시간
+      //   setTimeout(function () {
+      //     alert("프로그램 실행");
+      //   }, 2000);
+
+      //setInterval
+      //   setInterval(function () {
+      //     console.log("프로그램 실행");
+      //   }, 1000);
+
+      var count = 0;
+      var fnc = setInterval(function () {
+        if (count < 5) {
+          console.log("프로그램 실행" + count);
+          count++;
+        } else {
+          console.log("종료");
+          clearInterval(fnc);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
