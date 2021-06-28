@@ -50,3 +50,13 @@
 
 </ul>
 
+<h1>4. Lesson 2021-06-28</h1>
+3. javascript 문법 - Math객체 함수
+
+<ul>
+<li>set 객체 </li>
+<li>Map 객체</li>
+<li>Math 객체</li>
+<li>JSON 객체</li>
+<li>window 객체</li>
+</ul>
