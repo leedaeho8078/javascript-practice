@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+      // Mock 서버
+      //   //promise
+      const url =
+        " https://3f38ec43-d4a6-4aa3-a1c7-c1a650273cd6.mock.pstmn.io/getUserlist";
+
+      //   //   var data = axios.get(url);
+      //   //   console.log(data);
+
+      function getData() {
+        return new Promise(function (resolve, reject) {
+          reject(new Error("Requestis failed"));
+          axios.get(url).then(function (response) {
+            resolve(response.data);
+          });
+        });
+      }
+
+      getData()
+        .then(function (jsonData) {
+          console.log(jsonData.data);
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+
+      //Async-await
+
+      //   async function api(url) {
+      //     return (await axios.et(url)).data;
+      //   }g
+
+      //   async function getData(path) {
+      //     var data = await api(url + path);
+      //     console.log(path, data);
+      //   }
+
+      //   async function getuserList() {
+      //     var data = await api(url + "getUserList");
+      //     console.log(data);
+      //   }
+
+      //   async function getDrinkList() {
+      //     var data = await api(url + "getDrinkList");
+      //     console.log(data);
+      //   }
+
+      //   getData("getUserList");
+      //   getData("getDrinkList");
+      //   getuserList();
+      //   getDrinkList();
+
+      //fetch
+      //   fetch(url + "getUserlist")
+      //     .then(function (response) {
+      //       return response.json();
+      //     })
+      //     .then(function (data) {
+      //       console.log(data);
+      //     });
+    </script>
+  </body>
+</html>
