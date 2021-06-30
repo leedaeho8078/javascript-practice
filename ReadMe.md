@@ -51,7 +51,7 @@
 </ul>
 
 <h1>4. Lesson 2021-06-28</h1>
-3. javascript 문법 - Math객체 함수
+4. javascript 문법 - Math객체 함수
 
 <ul>
 <li>set 객체 </li>
@@ -60,3 +60,16 @@
 <li>JSON 객체</li>
 <li>window 객체</li>
 </ul>
+
+<h1>5. Lesson 2021-06-29</h1>
+<p>5. javascript 고급 문법 - this <br>
+1. this의 개념 ->
+2. default 파라미터 값
+3. 
+</p>
+
+<h1>6. Lesson 2021-06-30</h1>
+
+```js
+var name = 10;
+```
