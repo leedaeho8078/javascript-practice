@@ -61,6 +61,7 @@
 <li>window 객체</li>
 </ul>
 
+<<<<<<< HEAD
 <h1>5. Lesson 2021-06-29</h1>
 <p>5. javascript 고급 문법 - this <br>
 1. this의 개념 ->
@@ -74,3 +75,7 @@
 var name = 10;
 console.log(name);
 ```
+=======
+<h1>5. Lesson 2021-06-28</h1>
+var num = 10;
+>>>>>>> 10bb4a5b194b5d6ac87afec5e14f33761ae2edae
