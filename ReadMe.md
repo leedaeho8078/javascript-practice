@@ -79,3 +79,8 @@ console.log(name);
 <h1>5. Lesson 2021-06-28</h1>
 var num = 10;
 >>>>>>> 10bb4a5b194b5d6ac87afec5e14f33761ae2edae
+
+
+```js
+var name =10;
+```
